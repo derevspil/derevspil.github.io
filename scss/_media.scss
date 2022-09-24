@@ -1,0 +1,148 @@
+@media screen and(max-width:1188px) {
+        .serv {
+            &__photo {
+                width: 400px;
+            }
+        }
+        .photos {
+            &__photo {
+                width: 250px;
+                height: 250px;
+            }
+        }
+}
+
+@media screen and(max-width:1023px) {
+    .title {
+        font-size: 24px;
+    }
+    .promo {
+        &__h {
+            font-size: 36px;
+        }
+        &__text {
+            font-size: 20px;
+            max-width: 300px;
+            line-height: 120%;
+        }
+        &__white {
+            width: 65%;
+        }
+    }
+    .video {
+        
+        &__h {
+            font-size: 26px;
+    line-height: 33px;
+        }
+        &__btn {
+            margin-top: 47px;
+        }
+    }
+    .serv {
+        &__photo {
+            width: 300px;
+        }
+        &__text {
+            font-size: 12px;
+            width: 180px;
+            padding: 10px;
+        }
+    }
+    .tabs {
+        &__caption {
+            li {
+                font-size: 16px;
+            }
+        }
+    }
+   
+}
+@media screen and(max-width:767px) {
+    .menu {
+        position: fixed;
+        
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        background: rgba(52, 51, 69, .95);
+        padding: 50px;
+        width: 70%;
+        height: 80vh;
+        transition: all .3s;
+        z-index: 3;
+        &_active {
+            right: 0;
+        }
+        &__item {
+            a {
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        
+    }
+    .hamburger {
+        display: flex;
+    }
+    .promo {
+        &__white {
+            width: 100%;
+            background: rgba(255, 255, 255, .55)
+        }
+    }
+    .video {
+        
+        &__h {
+            font-size: 16px;
+    line-height: 20px;
+        }
+        &__btn {
+            margin-top: 25px;
+            font-size: 9px;
+        }
+    }
+    
+    .serv {
+        position: relative;
+        &__photo {
+            max-width: 230px;
+            height: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__text {
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+            margin-left: 0;
+            width: 100%;
+            border-radius: 0;
+            height: 92px;
+            overflow-y: scroll;
+        }
+        &__wrapper {
+            height: 100%;
+        }
+    }
+   
+}
+@media screen and(max-width:525px){
+    .photos__photo {
+        width: 339px;
+        height: 339px;
+    }
+}
+@media screen and(max-width:424px) {
+    .video {
+        &__h {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__content {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.tabs__content {
+    display: none; /* по умолчанию прячем все блоки */
+  }
+  .tabs__content.active {
+    display: block; /* по умолчанию показываем нужный блок */
+  }
+
+.tabs {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    &__caption {
+        list-style-type: none;
+        margin-right: 25px;
+        li {
+            padding-left: 10px;
+            &.active {
+                border-bottom: 2px solid $main-color;
+                &::before {
+                    content: url('../img/before.svg');
+                    top: -3px;
+                    left: -22px;
+                    position: absolute;
+                    
+                }
+            }
+            cursor: pointer;
+            position: relative;
+            margin-top: 20px;
+            display: block;
+           
+            width: fit-content;
+            font-size: 1.2rem;
+            &:hover {
+                border-bottom: 2px solid $main-color;
+                &::before {
+                    content: url('../img/before.svg');
+                   
+                    position: absolute;
+                    top: -3px;
+                    left: -22px;
+                }
+            }
+        }
+       
+    }
+}
+
+.serv {
+    background: linear-gradient(to right, #FFF8EA 50%, #fff 50%);
+    padding: 100px 0 100px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        padding: 24px;
+        width: 294px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        margin-left: -60px;
+        align-self: end;
+        background: $main-color;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    &__photo {
+        width: 500px;
+        img {
+            width: 100%;
+        }
+        // animation: photo 0.5s ease;
+    }
+}

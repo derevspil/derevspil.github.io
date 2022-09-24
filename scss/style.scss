@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+@import '_vari.scss';
+.container {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.btn {
+    background: $main-color;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background: $text-color;
+       
+       
+    }
+    &:active {
+        box-shadow: inset 2px 2px 5px #000;
+}
+}
+.title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.15em;
+    color: $text-color;
+
+}
+
+@import '_promo.scss';
+@import '_video.scss';
+@import '_serv.scss';
+@import '_photo.scss';
+
+@import '_media.scss';
