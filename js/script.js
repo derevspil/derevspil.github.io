@@ -1,4 +1,12 @@
-window.addEventListener('DOMContentLoaded', () => {
+$(window).on('load', function () {
+  
+  $('.loader').delay(2350).fadeOut('slow');
+  $('.loaderArea').delay(2350).fadeOut('slow');
+});
+
+// window.addEventListener('DOMContentLoaded', () => {
+
+
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu__item'),
     hamburger = document.querySelector('.hamburger');
@@ -53,4 +61,4 @@ window.addEventListener('DOMContentLoaded', () => {
           }
       });
 
-});
+// });
