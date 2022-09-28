@@ -1,0 +1,32 @@
+.wins {
+    padding: 100px 0 60px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    &__img {
+        width: 268px;
+        height: 360px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__item {
+        width: 268px;
+        margin: 25px 10px;
+    }
+    &__text {
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+       color: $text-color;
+        text-align: center;
+        margin-top: 10px;
+
+    }
+}
