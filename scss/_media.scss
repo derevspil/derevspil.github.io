@@ -56,6 +56,20 @@
             }
         }
     }
+    .about {
+        padding-top: 60px;
+        &__content {
+            max-width: 335px;
+        }
+        &__photo {
+            width: 500px;
+        }
+        
+    }
+    .text {
+        font-size: 14px;
+        
+    }
    
 }
 @media screen and(max-width:767px) {
@@ -130,7 +144,27 @@
     #myVideo {
         width: auto;
     }
-   
+    .about {
+        &__photo {
+            position: relative;
+            transform: translateY(0);
+            order: 1;
+            width: 300px;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__content {
+            order:2;
+            padding: 0;
+        }
+    }
+    .text {
+        text-align: center;
+    }
 }
 @media screen and(max-width:525px){
     .photos__photo {
