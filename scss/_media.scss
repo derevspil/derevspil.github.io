@@ -126,26 +126,31 @@
     
     .serv {
         position: relative;
+        padding-bottom: 0;
         &__photo {
-            max-width: 230px;
-            height: 100%;
+           width: 250px;
+           height: 350px;
             img {
                 height: 100%;
                 object-fit: cover;
             }
         }
         &__text {
-            position: absolute;
-            bottom: -30px;
-            right: 0;
+            padding: 25px;
+            height: auto;
             margin-left: 0;
             width: 100%;
             border-radius: 0;
-            height: 92px;
+            height: auto;
             overflow-y: scroll;
+            margin-left: -150px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 10px;
         }
         &__wrapper {
             height: 100%;
+            flex-direction: column;
+            align-items: center;
         }
     }
     #myVideo {
@@ -189,6 +194,14 @@
             line-height: 120%;
         }
     }
+    .footer {
+        &__text {
+            font-size: 16px;
+        }
+        &__soc {
+            max-width: 46px;
+        }
+    }
 }
 @media screen and(max-width:525px){
     .photos__photo {
@@ -204,6 +217,11 @@
         }
         &__content {
             width: 90%;
+        }
+    }
+    .serv {
+        &__photo {
+            width: 200px;
         }
     }
 }
