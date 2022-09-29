@@ -23,6 +23,7 @@ body {
     display: inline-block;
     color: #fff;
     cursor: pointer;
+    border: none;
     &:hover {
         background: $text-color;
        
@@ -55,5 +56,6 @@ body {
 @import '_photo.scss';
 @import '_about.scss';
 @import '_wins.scss';
+@import '_form.scss';
 
 @import '_media.scss';
