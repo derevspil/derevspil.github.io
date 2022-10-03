@@ -37,7 +37,7 @@
     left: 50%;
     bottom: 7px;
     transform: translateX(-38px);
-
+    z-index: 2;
 }
 
 .photos {
@@ -52,7 +52,7 @@
         padding-top: 15px;
         position: relative;
        width: 300px;
-       height: 300px;
+       height: 500px;
        margin: 0 auto;
         img {
             width: 100%;

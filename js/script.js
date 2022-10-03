@@ -37,7 +37,7 @@ $(window).on('load', function () {
        //slider gallery
     var swiper = new Swiper(".swiper", {
         slidesPerView: 3,
-        // spaceBetween: 25,
+        spaceBetween: 25,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -60,5 +60,16 @@ $(window).on('load', function () {
             }
           }
       });
+
+      //modal
+
+      $('.consult').on('click', function(){
+        $('.overlay, .modal').fadeIn();
+      });
+
+      $('.modal__close, .overlay').on('click', function(){
+        $('.overlay, .modal').fadeOut();
+      });
+      $('form').trigger('reset');
 
 // });

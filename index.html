@@ -36,8 +36,8 @@
                         <a href="#"><img src="img/logo.svg" alt="logo"></a>
                     </div>
                     <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Галерея</a></li>
+                        <li class="menu__item"><a href="#serv" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="#photos" class="menu__link">Галерея</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                     </ul>
                     <a href="+799999999" class="header__phone">+7 999 999 99 99</a>
@@ -56,7 +56,7 @@
            
                 <h1 class="promo__h">Спил деревьев</h1>
                 <p class="promo__text">Бесплатный выезд для оценки по муниципальному образованию городской округ город-курорт Сочи Краснодарского края (Адлерский, ХОстинский, Центральный, Лазаревский районы)</p>
-                <div class="btn">Рассчитать стоимость </div>
+                <div class="btn consult">Рассчитать стоимость </div>
            
         </div>
         </div>
@@ -64,16 +64,18 @@
         
     </section>
     <section class="video">
-        <video autoplay muted loop id="myVideo">
-            <source src="img/videoderevspil.mp4" type="video/mp4">
-        </video>
+        <div class="video__wrap">
+            <video autoplay muted loop id="myVideo">
+                <source src="img/videoderevspil.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="video__overlay"></div>
         <div class="video__content">
             <h2 class="video__h">Кронирование и ликвидация аварийных деревьев любой сложности</h2>
-            <div class="btn video__btn">Получить консультацию</div>
+            <div class="btn video__btn consult">Получить консультацию</div>
         </div>
     </section>
-    <section class="serv">
+    <section class="serv" id="serv">
         <div class="container">
             <h2 class="title">Услуги</h2>
 
@@ -159,7 +161,7 @@
               </div><!-- .tabs-->
         </div>
     </section>
-    <section class="photos">
+    <section class="photos" id="photos">
         <div class="container">
             <h2 class="title">Галерея работ</h2>
             <div class="swiper">
@@ -197,6 +199,20 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="photos__wrap">
+                        <div class="photos__photo">
+                            <img src="img/photo5.png" alt="photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photos__wrap">
+                        <div class="photos__photo">
+                            <img src="img/photo6.jpeg" alt="photo">
+                        </div>
+                    </div>
+                </div>
                             
                 </div>
                 
@@ -230,7 +246,7 @@
             <div class="wins__wrapper">
                 <div class="wins__item">
                     <div class="wins__img">
-                        <img src="img/wins-img1.png" alt="photo">
+                        <img src="img/wins-img1.svg" alt="photo">
                     </div>
                     <p class="wins__text">
                         Оцениваем стоимость работ по Вашим фото
@@ -238,7 +254,7 @@
                 </div>
                 <div class="wins__item">
                     <div class="wins__img">
-                        <img src="img/wins-img2.png" alt="photo">
+                        <img src="img/wins-img2.svg" alt="photo">
                     </div>
                     <p class="wins__text">
                         Собрюдаем нормы безопасности и гарантируем сохранность имущества
@@ -246,7 +262,7 @@
                 </div>
                 <div class="wins__item">
                     <div class="wins__img">
-                        <img src="img/wins-img3.png" alt="photo">
+                        <img src="img/wins-img3.svg" alt="photo">
                     </div>
                     <p class="wins__text">
                         По Вашему желанию и согласованию из аварийного дерева создаем скульптуру
@@ -254,7 +270,7 @@
                 </div>
                 <div class="wins__item">
                     <div class="wins__img">
-                        <img src="img/wins-img4.png" alt="photo">
+                        <img src="img/wins-img4.svg" alt="photo">
                     </div>
                     <p class="wins__text">
                         Выполняем работы любой сложности - в команде работают профессионалы 
@@ -269,14 +285,14 @@
             <div class="form__wrapper">
                 <p class="form__text">Оставьте заявку на осмотр объекта <br> Выезд специалиста по городу - бесплатно!</p>
             <form class="form__form" action="#" enctype="multipart/form-data" method="POST">
-                <input class="form__input" type="text" placeholder="Ваше имя">
-                <input class="form__input" type="number" placeholder="Ваш телефон">
+                <input required class="form__input" type="text" placeholder="Ваше имя">
+                <input required class="form__input" type="number" placeholder="Ваш телефон">
                 <textarea class="form__input" name="message" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
                 <div class="form__btn">
                     <label for="file"><img src="img/attachment.svg" alt="attachment"> Загрузить фото</label>
                 </div>
                 <input id="file" style="visibility:hidden;" type="file" placeholder="Прикрепить фото">
-                <input type="submit" placeholder="Отправить" class="btn">
+                <button type="submit" class="btn">Отправить</button>
             </form>
             </div>
         </div>
@@ -288,6 +304,7 @@
             <p class="footer__text">
                 Компания “Наше дело” принимает заказы на кронирование и ликвидацию аварийных деревьев любой сложности на трерритории Сочи
             </p>
+            <p class="footer__text">Свяжитесь с нами в соцсетях:</p>
             <div class="footer__wrapper">
                 <a href="#" class="footer__soc"><img src="img/mail.png" alt="mail"></a>
                 <a href="#" class="footer__soc"><img src="img/ig.png" alt="inst"></a>
@@ -299,5 +316,20 @@
         </div>
        
     </footer>
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="modal__close">&times;</div>
+        <p class="text">Оставьте заявку, и мы свяжемся с Вами в ближайшее время</p>
+        <form class="form__form" action="#" enctype="multipart/form-data" method="POST">
+            <input required class="form__input" type="text" placeholder="Ваше имя">
+            <input required class="form__input" type="number" placeholder="Ваш телефон">
+            <textarea class="form__input" name="message" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+            <div class="form__btn">
+                <label for="file"><img src="img/attachment.svg" alt="attachment"> Загрузить фото</label>
+            </div>
+            <input id="file" style="visibility:hidden;" type="file" placeholder="Прикрепить фото">
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
 </body>
 </html>

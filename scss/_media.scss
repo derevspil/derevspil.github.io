@@ -7,7 +7,7 @@
         .photos {
             &__photo {
                 width: 250px;
-                height: 250px;
+                height: 400px;
             }
         }
 }
@@ -78,6 +78,14 @@
         }
     }
    
+}
+@media screen and(max-width:900px) {
+    .photos {
+        &__photo {
+            width: 200px;
+            height: 200px;
+        }
+    }
 }
 @media screen and(max-width:767px) {
     .menu {
@@ -206,7 +214,7 @@
 @media screen and(max-width:525px){
     .photos__photo {
         width: 339px;
-        height: 339px;
+        height: 500px;
     }
 }
 @media screen and(max-width:424px) {

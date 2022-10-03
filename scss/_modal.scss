@@ -1,0 +1,33 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    z-index: 100;
+}
+.modal {
+    display: none;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    z-index: 101;
+    .text {
+        text-align: center;
+        line-height: 120%;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    &__close {
+        position: absolute;
+        font-size: 46px;
+        right: 0;
+        top: -59px;
+        cursor: pointer;
+    }
+}
