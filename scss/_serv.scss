@@ -14,8 +14,16 @@
         margin-right: 25px;
         li {
             padding-left: 10px;
+            // height: 26px;
+           position: relative;
+            &.active .serv__divider {
+                // border-bottom: 2px solid $main-color;
+                display: block;
+                
+            }
             &.active {
-                border-bottom: 2px solid $main-color;
+                // border-bottom: 2px solid $main-color;
+                display: block;
                 &::before {
                     content: url('../img/before.svg');
                     top: -3px;
@@ -31,16 +39,12 @@
            
             width: fit-content;
             font-size: 1.2rem;
-            &:hover {
-                border-bottom: 2px solid $main-color;
-                &::before {
-                    content: url('../img/before.svg');
-                   
-                    position: absolute;
-                    top: -3px;
-                    left: -22px;
-                }
+            &:hover .serv__divider {
+                // border-bottom: 2px solid $main-color;
+                display: block;
+                animation: divider .5s linear;
             }
+            
         }
        
     }
@@ -49,6 +53,14 @@
 .serv {
     background: linear-gradient(to right, #FFF8EA 50%, #fff 50%);
     padding: 100px 0 100px;
+    &__divider {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background: $main-color;
+        display: none;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -63,6 +75,7 @@
         align-self: end;
         background: #FFF8EA;
         margin-bottom: 30px;
+        animation: text .5s linear
         
     }
     &__photo {
@@ -73,7 +86,30 @@
             height: 100%;
             object-fit: cover;
             object-position: top;
+            animation: photo 0.3s linear;
         }
-        // animation: photo 0.5s ease;
+       
+    }
+}
+
+@keyframes photo {
+    0% {
+        transform: scale(.4);
+    }
+    100% {
+       transform: scale(1);
+    }
+}
+@keyframes text {
+    0% {
+
+    }
+}
+@keyframes divider {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
