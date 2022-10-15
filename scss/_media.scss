@@ -40,9 +40,7 @@
         }
     }
     .serv {
-        &__photo {
-            width: 300px;
-        }
+        
         &__text {
             font-size: 12px;
             width: 180px;
@@ -136,7 +134,7 @@
         position: relative;
         padding-bottom: 0;
         &__photo {
-           width: 250px;
+        //    width: 250px;
            height: 350px;
             img {
                 height: 100%;
@@ -206,15 +204,20 @@
         &__text {
             font-size: 16px;
         }
-        &__soc {
-            max-width: 46px;
-        }
+        
     }
 }
 @media screen and(max-width:525px){
     .photos__photo {
         width: 339px;
         height: 500px;
+    }
+    .serv {
+        &__photo {
+            margin-top: 30px;
+    width: 244px;
+    height: 185px;
+        }
     }
 }
 @media screen and(max-width:424px) {

@@ -1,25 +1,12 @@
-$(window).on('load', function () {
+// $(window).on('load', function () {
   
-  $('.loader').delay(2350).fadeOut('slow');
-  $('.loaderArea').delay(2350).fadeOut('slow');
-});
+  $('.loader').delay(5000).fadeOut('slow');
+  $('.loaderArea').delay(5000).fadeOut('slow');
+// });
 
- //плавный скролл
- $('.scrollto a').on('click', function() {
+ 
 
-  let href = $(this).attr('href');
-
-  $('html, body').animate({
-      scrollTop: $(href).offset().top
-  }, {
-      duration: 370,   // по умолчанию «400» 
-      easing: "linear" // по умолчанию «swing» 
-  });
-
-  return false;
-});
-
-// window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
 
 
     const menu = document.querySelector('.menu'),
@@ -87,6 +74,19 @@ $(window).on('load', function () {
       });
       $('form').trigger('reset');
 
-     
+     //плавный скролл
+ $('.scrollto a').on('click', function() {
 
-// });
+  let href = $(this).attr('href');
+
+  $('html, body').animate({
+      scrollTop: $(href).offset().top
+  }, {
+      duration: 370,   // по умолчанию «400» 
+      easing: "linear" // по умолчанию «swing» 
+  });
+
+  return false;
+});
+
+});
