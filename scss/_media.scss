@@ -84,6 +84,19 @@
             height: 200px;
         }
     }
+    .video {
+        &__subtitle {
+            font-size: 18px;
+            line-height: 140%;
+        }
+    }
+    .wins {
+        &__img {
+            height: auto;
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
 }
 @media screen and(max-width:767px) {
     .menu {
@@ -120,10 +133,7 @@
     }
     .video {
         
-        &__h {
-            font-size: 16px;
-    line-height: 20px;
-        }
+    
         &__btn {
             margin-top: 25px;
             font-size: 9px;
@@ -134,7 +144,7 @@
         position: relative;
         padding-bottom: 0;
         &__photo {
-        //    width: 250px;
+        
            height: 350px;
             img {
                 height: 100%;
@@ -183,11 +193,7 @@
     .text {
         text-align: center;
     }
-    .wins {
-        &__img {
-            height: auto;
-        }
-    }
+    
     .form {
         &__wrapper {
             flex-direction: column;
@@ -222,10 +228,7 @@
 }
 @media screen and(max-width:424px) {
     .video {
-        &__h {
-            font-size: 14px;
-            line-height: 16px;
-        }
+        
         &__content {
             width: 90%;
         }
