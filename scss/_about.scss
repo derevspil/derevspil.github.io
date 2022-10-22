@@ -20,4 +20,19 @@
         z-index: 1;
         width: 700px;
     }
+    .text {
+        &__name {
+            margin-top: 20px;
+            display: block;
+            text-align: right;
+            font-style: italic;
+            font-weight: 700;
+        }
+        &__prof {
+            display: block;
+            text-align: right;
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
 }
