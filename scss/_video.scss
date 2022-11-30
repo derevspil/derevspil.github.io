@@ -1,6 +1,8 @@
 .video {
     position: relative;
     overflow: hidden;
+    background-image: url(../img/vp.png);
+    background-position: right;
     &__wrap {
         height: 100vh;
         width: 100%;
