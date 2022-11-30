@@ -1,7 +1,7 @@
 .video {
     position: relative;
     overflow: hidden;
-    background-image: url(../img/vp.png);
+    background-image: url(../img/bg2.png);
     background-position: 61%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,11 +24,11 @@
         left: 50%;
     }
     &__h {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 36px;
         line-height: 42px;
         text-align: center;
-        letter-spacing: 0.15em;
+        
         text-transform: uppercase;
 
         color: #FFFFFF;
