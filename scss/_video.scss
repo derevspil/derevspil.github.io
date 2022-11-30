@@ -2,20 +2,20 @@
     position: relative;
     overflow: hidden;
     background-image: url(../img/bg2.png);
-    background-position: 61%;
+    background-position: 54%;
     background-size: cover;
     background-repeat: no-repeat;
     &__wrap {
         height: 100vh;
         width: 100%;
     }
-    // &__overlay {
-    //     width: 100%;
-    //     height: 100%;
-    //     position: absolute;
-    //     top: 0;
-    //     background: rgba(47, 62, 6, .4);
-    // }
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: rgba(12, 31, 3, 0.4);
+    }
     &__content {
         position: absolute;
         top: 30%;
