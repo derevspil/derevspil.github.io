@@ -2,7 +2,9 @@
     position: relative;
     overflow: hidden;
     background-image: url(../img/vp.png);
-    background-position: right;
+    background-position: 61%;
+    background-size: cover;
+    background-repeat: no-repeat;
     &__wrap {
         height: 100vh;
         width: 100%;
