@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu__item'),
+    menuItem = document.querySelectorAll('.menu__link'),
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
         });
+        console.log('ok');
     });
 
     //tabs
@@ -70,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
 
       $('.modal__close, .overlay').on('click', function(){
-        $('.overlay, .modal').fadeOut();
+        $('.overlay, .modal, .thanks').fadeOut();
       });
       $('form').trigger('reset');
 
@@ -88,5 +89,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
   return false;
 });
+
+//form
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+      type: "POST",
+      url: "../mailer/smart.php",
+      data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+      $('.modal').fadeOut();
+      $('.thanks').fadeIn();
+      $('.overlay').fadeIn();
+  
+      $('form').trigger('reset');
+      console.log('ok');
+  });
+  return false;
+  });
 
 });
